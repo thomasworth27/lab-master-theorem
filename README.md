@@ -306,7 +306,7 @@ For each function:
 | --- | --- | --- | --- | --- |
 | `binary_search`   | $T(n) = T(n/2) + \Theta(1)$ | yes | $T(n) = \Theta(\log n)$ | no |
 | `merge_sorted`    | $T(n) = 2T(n/2) + \Theta(n)$ | yes | $T(n) = \Theta(n\log n)$ | no |
-| `quick_sorted`    | $T(n) = 2T(n/2) + \Theta(n)$ | yes | $T(n) = \Theta(n\log n)$ | |
+| `quick_sorted`    | $T(n) = 2T(n/2) + \Theta(n)$ | yes | $T(n) = \Theta(n\log n)$ | no |
 | `quick_select`    | $T(n) =  T(n/2) + \Theta(n)$ | yes | $T(n) = \Theta(n)$ | no |
 | `sequential_search_rec` | $T(n) = T(n−1) + \Theta(n)$ | no | --- | no |
 | `power`           | $T(n) = 2T(n/2) + \Theta(1)$ | yes | $T(n) = \Theta(n)$ | yes |
