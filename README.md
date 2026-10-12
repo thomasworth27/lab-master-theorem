@@ -313,10 +313,10 @@ For each function:
 | `modified_pow`    | $T(n) =  T(n/2) + \Theta(1)$ | yes | $T(n) = \Theta(\log n)$ | no (already memoized) |
 | `fib`             | $T(n) =  T(n-1) + T(n-2) + \Theta(1)$ | no  | --- | yes |
 | `fast_fib` (memoized `fib`) | $T(n) =  T(n-1) + \Theta(1)$ | no  | --- | no (already memoized) |
-| `grid_paths`      | | | | |
-| `foo1`            | | | | |
-| `foo2`            | | | | |
-| `foo3`            | | | | |
+| `grid_paths`      | $T(m,n) = T(m−1,n) + T(m,n−1) + \Theta(1)$ | no | --- | yes |
+| `foo1`            | $T(n) = 4T(n/2) + \Theta(1)$ | yes | $T(n) = \Theta(n^2)$ | yes |
+| `foo2`            | $T(n) = 2T(n/2) + \Theta(n)$ | yes | $T(n) = \Theta(n\log n)$ | no |
+| `foo3`            | $T(n) = 2T(n/2) + \Theta(n^2)$ | yes | $T(n) = \Theta(n^2)$ | no |
 
 ## Submission
 
