@@ -307,9 +307,9 @@ For each function:
 | `binary_search`   | $T(n) = T(n/2) + \Theta(1)$ | yes | $T(n) = \Theta(\log n)$ | no |
 | `merge_sorted`    | $T(n) = 2T(n/2) + \Theta(n)$ | yes | $T(n) = \Theta(n\log n)$ | no |
 | `quick_sorted`    | $T(n) = 2T(n/2) + \Theta(n)$ | yes | $T(n) = \Theta(n\log n)$ | |
-| `quick_select`    | $T(n) =  T(n/2) + \Theta(n)$ | yes | | |
-| `sequential_search_rec` | | | | |
-| `power`           | $T(n) = 2T(n/2) + \Theta(1)$ | yes | | yes |
+| `quick_select`    | $T(n) =  T(n/2) + \Theta(n)$ | yes | $T(n) = \Theta(n)$ | no |
+| `sequential_search_rec` | $T(n) = T(n−1) + \Theta(n)$ | no | --- | no |
+| `power`           | $T(n) = 2T(n/2) + \Theta(1)$ | yes | $T(n) = \Theta(n)$ | yes |
 | `modified_pow`    | $T(n) =  T(n/2) + \Theta(1)$ | yes | | no (already memoized) |
 | `fib`             | $T(n) =  T(n-1) + T(n-2) + \Theta(1)$ | no  | --- | yes |
 | `fast_fib` (memoized `fib`) | $T(n) =  T(n-1) + \Theta(1)$ | no  | --- | no (already memoized) |
